@@ -29,3 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+      env:
+       BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
+       BROWSERSTACK_KEY: ${{ secrets.BROWSERSTACK_USER }}
+       PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
