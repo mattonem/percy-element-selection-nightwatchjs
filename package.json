@@ -1,5 +1,5 @@
 {
-  "name": "@maxmattone/percy-element-selection",
+  "name": "@maxmattone/percy-nightwatch-element-selection",
   "version": "1.0.0",
   "description": "",
   "main": "commands/percySnapshotForSelectedElements.js",

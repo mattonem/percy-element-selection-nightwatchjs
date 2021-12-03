@@ -149,6 +149,8 @@ module.exports = {
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
+        'project': 'percy-nightwatch-element-selection',
+        'build': '${BUILDNAME}',
         'bstack:options' : {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
