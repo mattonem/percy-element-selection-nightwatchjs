@@ -23,8 +23,7 @@ jobs:
     - name: Set UUID
       id: generate-uuid
       uses: filipstefansson/uuid-action@v1
-      with:
-        name: ${{ github.sha }}
+      
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
