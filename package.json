@@ -1,0 +1,33 @@
+{
+  "name": "@maxmattone/percy-element-selection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commands/percySnapshotForSelectedElements.js",
+  "keywords": [
+    "nightwatch",
+    "percy",
+    "visual testing"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nightwatch --env browserstack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.71",
+    "@percy/nightwatch": "^2.0.0",
+    "nightwatch": "^1.7.12",
+    "@percy/core": "^1.0.0-beta.71"
+  },
+  "dependencies": {
+    
+  },
+  "peerDependencies":
+  {
+    "nightwatch": "^1.7.12",
+    "@percy/core": "^1.0.0-beta.71"
+  }
+}
