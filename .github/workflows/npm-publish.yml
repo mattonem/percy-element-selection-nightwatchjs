@@ -11,12 +11,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
+    - name: Set UUID
+      id: generate-uuid
+      uses: filipstefansson/uuid-action@v1
+      with:
+        name: ${{ github.sha }}
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm test
+      env:
+       BROWSERSTACK_USER: ${{ secrets.BROWSERSTACK_USER }}
+       BROWSERSTACK_KEY: ${{ secrets.BROWSERSTACK_KEY }}
+       BUILDNAME: ${{ steps.generate-uuid.outputs.uuid }}
 
   publish-npm:
     needs: build
