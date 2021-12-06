@@ -1,6 +1,6 @@
 {
   "name": "@maxmattone/percy-nightwatch-element-selection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "commands/percySnapshotForSelectedElements.js",
   "keywords": [
@@ -23,11 +23,10 @@
     "@percy/core": "^1.0.0-beta.71"
   },
   "dependencies": {
-    
+    "@percy/nightwatch": "^2.0.0"
   },
   "peerDependencies":
   {
-    "nightwatch": "^1.7.12",
-    "@percy/core": "^1.0.0-beta.71"
+    "nightwatch": "^1.7.12"
   }
 }
