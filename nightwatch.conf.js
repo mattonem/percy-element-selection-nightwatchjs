@@ -151,6 +151,7 @@ module.exports = {
       desiredCapabilities: {
         'project': 'percy-nightwatch-element-selection',
         'build': '${BUILDNAME}',
+        'browserstack.geoLocation':'FR',
         'bstack:options' : {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
