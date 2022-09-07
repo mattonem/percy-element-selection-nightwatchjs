@@ -1,3 +1,4 @@
+⛔️ DEPRECATED: Percy now support single element comparaison nativaly. see: https://docs.percy.io/docs/screenshot-a-single-element
 # percy-element-selection-nightwatchjs
 The purpose of this library is to provide an API allowing partial content comparaison with [Percy](https://percy.io) via NightWatch. 
 
